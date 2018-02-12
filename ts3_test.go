@@ -62,7 +62,7 @@ func TestBasic(t *testing.T) {
 	var nathanIsOnline bool = false
 
 	err = client.WalkClients(func(idx int, client map[string]string) {
-		if nick, ok := client["client_nickname"]; ok && nick == "Nathan" {
+		if nick, ok := client["client_nickname"]; ok && nick == "mickwi11" {
 			nathanIsOnline = true
 		}
 	})
